@@ -5,5 +5,8 @@ public class oddOrEven {
     Output ex:
     identify(5); ->"Odd"
     identify(6); ->"Even"*/
+    public static void main(String[] args) {
+
+    }
 
 }

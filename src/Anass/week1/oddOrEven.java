@@ -1,4 +1,4 @@
-package questions.week1;
+package Anass.week1;
 
 public class oddOrEven {
     /*Write  a method which can identify given number is even or odd

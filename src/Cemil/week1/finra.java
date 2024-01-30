@@ -6,4 +6,27 @@ public class finra {
     //for numbers which are a multiple of 5, print "RA" instead of the number.
     //for numbers which are a multiple of both 3 and 5, print "FINRA" instead of the number.
 
+
+    public static void main(String[] args) {
+        FINRA(30);
+    }
+
+    public static void FINRA(int num){
+
+        for (int i = 1; i < num ; i++) {
+
+            String str = "";
+
+            if (i % 3 == 0){
+                str += "FIN";
+            }
+            if (i % 5 == 0){
+                str += "RA";
+            }
+
+            System.out.println(str.isEmpty() ? i :str);
+        }
+
+    }
+
 }

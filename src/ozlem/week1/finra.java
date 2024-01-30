@@ -7,5 +7,20 @@ public class finra {
     //for numbers which are a multiple of both 3 and 5, print "FINRA" instead of the number.
     public static void main(String[] args) {
 
+
+        for (int num = 1; num <= 30; num++) {
+            if (num % 3 == 0 && num % 5 == 0) {
+                System.out.println("FINRA");
+            } else if (num % 3 == 0) {
+                System.out.println("FIN");
+            } else if (num % 5 == 0) {
+                System.out.println("RA");
+            } else {
+                System.out.println(num);
+            }
+        }
     }
 }
+
+
+

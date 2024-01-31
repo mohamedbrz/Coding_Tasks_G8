@@ -1,4 +1,4 @@
-package questions.week1;
+package Anass.week1;
 
 public class finra {
     //Write a method which prints out the numbers from 1 to 30 but for numbers which are a multiple of 3,

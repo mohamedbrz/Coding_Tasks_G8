@@ -8,7 +8,7 @@ public class oddOrEven {
     public static void main(String[] args) {
 
 
-        int number = 50;
+        int number = 60;
         boolean isEven =true;
         boolean isOdd =true;
 

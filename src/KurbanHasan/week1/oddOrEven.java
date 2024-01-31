@@ -7,6 +7,19 @@ public class oddOrEven {
     identify(6); ->"Even"*/
     public static void main(String[] args) {
 
+
+        int number = 50;
+        boolean isEven =true;
+        boolean isOdd =true;
+
+        if (number% 2 == 0){
+            System.out.println(number +" is even number");;
+        }else System.out.println(number +" is odd number");;
+
+
+
+
+
     }
 
 }

@@ -12,6 +12,39 @@ Divisible By 5 5 10 20 25 35 40 50 55 65 70 80 85 95 100
 Divisible By 3 3 6 9 12 18 21 24 27 33 36 39 42 48 51 54 57 63 66 69 72 78 81 84 87 93 96 99
 */
 
+    public static void main(String[] args) {
+        divisible();
+    }
+    public static void divisible(){
+
+        String result15 = "";
+        String result3 = "";
+        String result5 = "";
+
+        for (int i = 1; i < 101 ; i++) {
+
+            if(i % 15 == 0 && i % 3 == 0 && i % 5 ==0 ){
+
+                result15 += i + " ";
+
+            }
+            if(i %3 == 0 && i % 15 !=0){
+
+                result3 += i + " ";
+
+            }
+            if(i %5 == 0 && i % 15 !=0) {
+
+                result5 += i + " ";
+            }
+            }
+
+        System.out.println("Divisible By 15 "+result15);
+        System.out.println("Divisible By 3 "+result3);
+        System.out.println("Divisible By 5 "+result5);
+
+
+    }
 
 }
 

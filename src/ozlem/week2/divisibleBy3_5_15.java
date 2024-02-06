@@ -1,5 +1,34 @@
 package ozlem.week2;
 public class divisibleBy3_5_15 {
+
+    public static void main(String[] args) {
+
+
+        System.out.print("Divisible By 5 - ");
+        for (int num = 1; num <= 100; num++) {
+            if (num % 15 == 0) {
+                System.out.print(num + " ");
+            }
+        }
+
+        System.out.println();
+        System.out.println("------------------------------------------");
+        System.out.print("Divisible By 5 - ");
+        for (int num = 1; num <= 100; num++) {
+            if (num % 5 == 0 && num % 15 != 0) {
+                System.out.print(num + " ");
+            }
+        }
+        System.out.println();
+        System.out.println("--------------------------------------------");
+        System.out.print("Divisible By 3 - ");
+        for (int num = 1; num <= 100; num++) {
+            if (num % 3 == 0 && num % 15 != 0) {
+                System.out.print(num + " ");
+            }
+        }
+
+    }
 /*Numbers -- Divisible by 3, 5, 15
 Write a program that can print the numbers between 1 ~ 100 that can be divisible by 3, 5, and 15.
 if the number can be divisible by 3, 5 and 15, then it should only be displayed in DivisibelBy15' section

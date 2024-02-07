@@ -13,7 +13,7 @@ public class swapTwoNumbers {
 
         System.out.println("a = " + a);
         System.out.println("b = " + b);
-        System.out.println("------------------------");
+        System.out.println("-------------------------");
 
         int x = 3;
         int y = 6;

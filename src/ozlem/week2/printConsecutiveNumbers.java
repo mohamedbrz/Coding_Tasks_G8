@@ -40,14 +40,7 @@ public class printConsecutiveNumbers {
 
 
 
-//
-//            System.exit(1);
-//        if (N%2==0 || N%3==0 || N%5==0){
-//            System.out.println("Codility");
-//        } else if ((N%2==0 && N%3==0) || (N%2==0 && N%5==0) ||(N%3==0 && N%2==0) || (N%3==0 && N%5==0) ) {
-//            System.out.println("CodilityTestCoders");
-//
-//---------------------------
+
 
 /*  Write a function: that, given a positive integer N, prints the consecutive numbers from 1 to N,
       each on a separate line. However, any number divisible by 2, 3 or 5 should be replaced by the word Codility,

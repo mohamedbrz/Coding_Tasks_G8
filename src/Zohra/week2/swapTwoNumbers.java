@@ -5,17 +5,18 @@ public class swapTwoNumbers {
 
     //Swap two variable' values without using a third variable
 
+        int a = 5;
+        int b = 10;
 
-    int x, y;
-    x = 10;
-    y = 20;
+        System.out.println("Before swapping: ");
+        System.out.println("a = " + a + ", b = " + b);
 
-    // swap numbers
-    x = x + y;
-    y = x - y;
-    x = x - y;
+        a = a + b; //15
+        b = a - b; //15-10=5
+        a = a - b;//15-5=10
 
-        System.out.println("x= " + x + " " + "y= " + y);
+        System.out.println("After swapping: ");
+        System.out.println("a = " + a + ", b = " + b);
 
 }
 }

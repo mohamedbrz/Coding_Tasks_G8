@@ -19,4 +19,10 @@ public class oddOrEven {
             System.out.println("Odd");
         }
     }
+
+    public static void main(String[] args) {
+
+        checkForOddEven(15);
+
+    }
 }

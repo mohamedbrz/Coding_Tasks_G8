@@ -7,13 +7,13 @@ public class reverseNegativeNumber {
         System.out.println(reverseNumber(-35));
     }
 
-    public static int reverseNumber(int number){
-        if(number < 10 && number >= 0){
+    public static int reverseNumber(int number) {
+        if (number < 10 && number >= 0) {
             return number * -1;
         }
 
         int result = 0;
-        while (number !=0) {
+        while (number != 0) {
             result = result * 10 + number % 10;
             number /= 10;
         }
@@ -21,6 +21,18 @@ public class reverseNegativeNumber {
         return result;
     }
 
+    //alternative solution
+    //converts&returns int num to a String so that we can handle -50 -> -5 issue because int does not have 0 before a number
+    public static String reverseNum(int num) {
+
+        String str = new StringBuilder("" + num).reverse().toString();
+
+        if (num < 0) {
+            str = "-" + str.substring(0, str.length() - 1);
+        }
+
+        return str;
+    }
 
 }
 

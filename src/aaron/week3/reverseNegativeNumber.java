@@ -9,7 +9,7 @@ public class reverseNegativeNumber {
 
     public static int reverseNumber(int number){
         if(number < 10 && number >= 0){
-            return number;
+            return number * -1;
         }
 
         int result = 0;

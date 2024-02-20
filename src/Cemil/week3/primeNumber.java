@@ -11,6 +11,8 @@ public class primeNumber {
         System.out.println("isPrime(11) = " + isPrime(11));
         System.out.println("isPrime(13) = " + isPrime(13));
         System.out.println("isPrime(1) = " + isPrime(1));
+        System.out.println("isPrime(0) = " + isPrime(0));
+        System.out.println("isPrime(2) = " + isPrime(2));
 
     }
 
@@ -18,7 +20,7 @@ public class primeNumber {
 
     public static boolean isPrime(int n){
 
-        if (n < 2){
+        if (n <= 2){
             return false;
         }
 

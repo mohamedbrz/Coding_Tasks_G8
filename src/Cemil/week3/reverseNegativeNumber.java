@@ -7,6 +7,7 @@ public class reverseNegativeNumber {
     public static void main(String[] args) {
         System.out.println("reversedNeg(-35) = " + reversedNeg(-35));
         System.out.println("reversedNeg(-1234) = " + reversedNeg(-1234));
+
     }
 
 

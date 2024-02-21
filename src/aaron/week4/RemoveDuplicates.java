@@ -3,21 +3,32 @@ package aaron.week4;
 public class RemoveDuplicates {
     /*Write a return method that can remove the duplicated values from String
         Ex:  removeDup("AAABBBCCC")  ==> ABC*/
-
     public static void main(String[] args) {
-        System.out.println(removeDup("aaabbbccc"));
 
-    }
 
-    public static String removeDup(String str) {
-
+        String str = "aaabbbccddff";
         String result = "";
 
-        for (int i = 0; i < str.length(); i++)
+        for (int j = 0; j < str.length(); j++) {
+            char ch = str.charAt(j); //a a a b b
+            int count = 0;
 
-            if (!result.contains("" + str.charAt(i)))
+            for (int i = 0; i < str.length(); i++) {
+                if (str.charAt(i) == ch) {
+                    count++;
+                }
+            }
 
-                result += "" + str.charAt(i);
-        return result;
+            if (result.contains(ch + "")) {
+                continue;
+            }
+            result += ch + "" + count;
+
+        }
+
+        System.out.println(result);
+
+
     }
 }
+

@@ -1,4 +1,5 @@
-package mo.week2;
+package Cemil.week2;
+
 public class printConsecutiveNumbers {
          /*  Write a function: that, given a positive integer N, prints the consecutive numbers from 1 to N,
       each on a separate line. However, any number divisible by 2, 3 or 5 should be replaced by the word Codility,
@@ -26,9 +27,10 @@ public class printConsecutiveNumbers {
         Codility
         17
 */
-         public static void main(String[] args) {
-             consecutiveNumbers(24);
-         }
+
+    public static void main(String[] args) {
+        consecutiveNumbers(24);
+    }
 
     public static void consecutiveNumbers(int num) {
 
@@ -53,4 +55,6 @@ public class printConsecutiveNumbers {
 
 
     }
+
+
 }

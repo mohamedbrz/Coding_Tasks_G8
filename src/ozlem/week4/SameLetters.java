@@ -10,15 +10,15 @@ public class SameLetters {
     public static void main(String[] args) {
 
 
-    System.out.println(same("abc", "cab"));
+    System.out.println(same("abc", "cabccc"));
         System.out.println(same("abc", "abb"));
 }
 
     public static boolean same(String str1, String str2){
 
-        if(str1.length() != str2.length()){
-            return false;
-        }
+//        if(str1.length() != str2.length()){
+//            return false;
+//        }
 
 
         char[] arr1 = str1.toCharArray(); //a b c

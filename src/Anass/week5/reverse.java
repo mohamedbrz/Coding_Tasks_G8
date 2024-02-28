@@ -22,7 +22,6 @@ public class reverse {
 
         System.out.println("Reversed string: "+result);
 
-sda
     }
 
 }

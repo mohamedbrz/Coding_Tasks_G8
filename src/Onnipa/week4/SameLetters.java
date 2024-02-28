@@ -11,17 +11,10 @@ public class SameLetters {
     }
     public static boolean same (String word1,String word2){
 
-        String words = RemoveDuplicates.duplicate(word1);
-        String words2 = RemoveDuplicates.duplicate(word2);
-
-
-        char[] ch1 = words.toCharArray();
-        char[] ch2 = words2.toCharArray();
+        char[] ch1 = word1.toCharArray();
+        char[] ch2 = word2.toCharArray();
         Arrays.sort(ch1);
-        System.out.println(ch1);
-
         Arrays.sort(ch2);
-        System.out.println(ch2);
         return Arrays.equals(ch1, ch2);
 
     }

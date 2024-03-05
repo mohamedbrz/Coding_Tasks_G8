@@ -1,4 +1,4 @@
-package questions.week6;
+package ozlem.week6;
 
 public class PasswordValidation {
     /*String -- Password Validation Task

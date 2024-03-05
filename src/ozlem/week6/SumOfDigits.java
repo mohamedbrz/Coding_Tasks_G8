@@ -1,4 +1,4 @@
-package questions.week6;
+package ozlem.week6;
 
 public class SumOfDigits {
     /*Write a method that can return the sum of the digits in a string

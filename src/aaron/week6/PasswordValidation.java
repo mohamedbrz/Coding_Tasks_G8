@@ -14,6 +14,8 @@ public class PasswordValidation {
     public static void main(String[] args) {
         System.out.println(PassWordvalidation("Ab*1Ab"));
         System.out.println(PassWordvalidation("Ab*1A "));
+        System.out.println(isValidPassword("Ab*1Ab"));
+        System.out.println(isValidPassword("AC*1AA"));
     }
 
     public static boolean PassWordvalidation(String password) {
@@ -33,6 +35,33 @@ public class PasswordValidation {
             if (HasLower && HasUppere && HasDigits && HasSpecial)
                 Valid = true;
         return Valid;
+    }
+
+    public static boolean isValidPassword(String password) {
+        // Requirement 1: Password length should be at least 6 characters and should not contain space
+        if (password.length() < 6 || password.contains(" ")) {
+            return false;
+        }
+
+        boolean hasUpperCase = false;
+        boolean hasLowerCase = false;
+        boolean hasSpecialChar = false;
+        boolean hasDigit = false;
+
+        for (char ch : password.toCharArray()) {
+            if (Character.isUpperCase(ch)) {
+                hasUpperCase = true;
+            } else if (Character.isLowerCase(ch)) {
+                hasLowerCase = true;
+            } else if (Character.isDigit(ch)) {
+                hasDigit = true;
+            } else if (!Character.isWhitespace(ch)) {
+                hasSpecialChar = true;
+            }
+        }
+
+        // Checking if all requirements are met
+        return hasUpperCase && hasLowerCase && hasDigit && hasSpecialChar;
     }
 
 

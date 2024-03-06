@@ -6,17 +6,25 @@ public class FrequencyofCharacters {
 
     public static String frequency1 (String str){
 
+
         String result = "";
+        int num =0;
         for (int i = 0; i < str.length(); i++) {
             String ch = ""+str.charAt(i);
 
 
-            if(result.contains(ch)){
+            if(!result.contains(ch)){
 
-                continue;
+                result+=ch;
+
+
+
+            }else  {
+              num++;
+
             }
+            result = result+""+num;
 
-            result +=ch ;
 
         }
 

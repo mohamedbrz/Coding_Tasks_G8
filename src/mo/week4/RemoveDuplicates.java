@@ -8,6 +8,7 @@ public class RemoveDuplicates {
         String result="";
         for (int i=0 ;i<s.length();i++) {
             char ch = s.charAt(i);
+
             if (!result.contains(""+ch)) {
                 result+=""+ch;
             }
@@ -16,7 +17,8 @@ public class RemoveDuplicates {
     }
 
     public static void main(String[] args) {
-        System.out.println("removeDuplicate(\"AAABBBCCC\") = " + removeDuplicate("AAABBBCCCC"));
+        System.out.println(removeDuplicate("AAABBBCCC"));
+
     }
 
 

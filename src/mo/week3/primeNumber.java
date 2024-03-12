@@ -28,6 +28,7 @@ public class primeNumber {
 
     public static void main(String[] args) {
         prime(8);
+
     }
 
 

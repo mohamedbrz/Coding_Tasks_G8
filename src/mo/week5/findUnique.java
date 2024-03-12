@@ -9,7 +9,7 @@ public class findUnique {
 public static void main(String[] args) {
             System.out.println(Unique("AAABBBCCCDEF"));
             System.out.println(unique("AAABBBCCCDEF"));
-            System.out.println(findUniqueCharacters("AAABBBCCCDEF"));
+            System.out.println(findUniqueCharacters("AAABBBrCCDEF"));
         }
 
 

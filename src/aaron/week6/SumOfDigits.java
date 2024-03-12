@@ -15,7 +15,7 @@ public class SumOfDigits {
         char[] ch =  str.toCharArray();
         for(char each: ch) {
             if(Character.isDigit(each)) {
-                total += Integer.valueOf(""+each);
+                total += Integer.parseInt(""+each);
             }
         }
         return total;

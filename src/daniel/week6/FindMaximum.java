@@ -12,7 +12,7 @@ public class FindMaximum {
         int[] arr = {99, 12, 101, 32, 500, 854, 631};
         System.out.println("MaximumFromArray(arr) = " + MaximumFromArray(arr));
 
-        int[] arr2 = {99, 12, 23, 32, 44, 57, 6};
+        int[] arr2 = {-99, 12, 23, 32, 44, 57, 6};
         System.out.println("MaximumFromArray(arr2) = " + MaximumFromArray(arr2));
 
     }

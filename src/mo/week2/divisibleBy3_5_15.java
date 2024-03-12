@@ -22,6 +22,7 @@ public static void main(String[] args) {
 
         for (int i = 1; i <= num; i++) {
 
+
             if (i % 15 == 0) {
                 by15 += i + " ";
             } else if (i % 5 == 0) {

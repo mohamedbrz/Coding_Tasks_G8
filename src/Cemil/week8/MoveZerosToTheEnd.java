@@ -12,7 +12,7 @@ public class MoveZerosToTheEnd {
 
     public static void main(String[] args) {
 
-        int[] inputArray = {1,0,2,0,3,0,4,0};
+        int[] inputArray = {1,0,2,0,3,0,-4,0};
         int[] resultArray = moveZerosToEnd(inputArray);
         System.out.println(Arrays.toString(resultArray));
     }
@@ -29,11 +29,11 @@ public class MoveZerosToTheEnd {
             }
         }
 
-        //fill the remaining space with zero
-        while (countZero < nums.length){
-            result[countZero] = 0;
-            countZero++;
-        }
+//        //fill the remaining space with zero
+//        while (countZero < nums.length){
+//            result[countZero] = 0;
+//            countZero++;
+//        }
 
         return result;
 

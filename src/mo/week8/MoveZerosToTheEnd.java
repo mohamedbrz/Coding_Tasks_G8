@@ -14,12 +14,14 @@ public class MoveZerosToTheEnd {
         for (int num : nums) {   // loop through elements in the array
             if (num != 0) {
                 nums[index++] = num; //index++ return the original value of index.
+                                     //The value of num is assigned to the element at the position index in the array nums.
+                                       //Then, the value of index is incremented by 1.
             }
         }
 
         // replace the rest indexes with zeros
-        while (index < nums.length) {
-            nums[index++] = 0;
+       while (index < nums.length) {
+           nums[index++] = 0;
         }
 
         //print the result
@@ -29,7 +31,7 @@ public class MoveZerosToTheEnd {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1,0,2,0,3,0,4,0};
+        int[] nums = {1,0,-2,0,3,0,4,0};
         moveZerosToTheEnd(nums);
 
 

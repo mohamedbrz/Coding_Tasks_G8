@@ -17,7 +17,7 @@ public class RemoveSomeValues {
         System.out.println(Arrays.asList(numbers));
 
         System.out.println("=========REMOVED LIST=============");
-        System.out.println(removeGreaterThan(numbers, 100));
+        System.out.println(removeGreaterThan(numbers, 2));
 
     }
 

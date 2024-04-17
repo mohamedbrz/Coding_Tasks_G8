@@ -7,20 +7,21 @@ public class mapFrequencyChars {
 //Write a method that prints the frequency of each character from a String
 
     public static void main(String[] args) {
-        Map<String, Integer> test = new HashMap<>();
-        test.put("Aaron", 11);
-        test.put("Harun", 5);
-        test.put("Cydeo", 27);
-        test.put("Java", 100);
-        System.out.println(minValue(test));
+        String test = "Aaron_aaron_Harun";
+        FrequencyTest(test);
     }
 
-
-    public static int minValue(Map<String, Integer> map) {
-        SortedSet<Integer> sortedMapValues = new TreeSet<>(map.values());
-        return sortedMapValues.first();
+    public static void FrequencyTest(String str) {
+        Map<Character, Integer> map = new LinkedHashMap<>();
+        for (Character each : str.toCharArray()) {
+            if (map.containsKey(each)) {
+                map.put(each, map.get(each) + 1);
+            } else {
+                map.put(each, 1);
+            }
+        }
+        System.out.println(map);
     }
-
 
 
 }

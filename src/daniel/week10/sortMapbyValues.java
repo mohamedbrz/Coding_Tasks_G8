@@ -19,11 +19,11 @@ public class sortMapbyValues {
         test1.put("value4", -447);
         test1.put("value5", 5564);
 
-        System.out.println("keySortMap(test1) = " + keySortMap(test1));
+        System.out.println("keySortMap(test1) = " + valueSortMap(test1));
 
     }
 
-    public static Map <String, Integer> keySortMap (Map <String, Integer> map) {
+    public static Map <String, Integer> valueSortMap(Map <String, Integer> map) {
         Map<String, Integer> sortedMap = map.entrySet().stream()
                 .sorted(Entry.comparingByValue())
                 .collect(Collectors.toMap(
